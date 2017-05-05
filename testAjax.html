@@ -2,26 +2,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ajax Loader</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
 
 		$('button').click(function(){
-			$('#container').load('text.txt');
+			$('#local').load('text.txt');
 		});
 
 	});
 
 </script>
 </head>
-
+<div class="container">
 <body>
 <h1>Ajax Loader</h1>
-
-<button>Click here</button>
+<br />
+<button class="btn btn-primary">Click here</button>
 <br />
 <br />
-<div id='container'></div>
+<div id='local'></div>
+</div>
 </body>
 </html>
